@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Emanyata Photography</title>
+  <style>
+    :root {
+      --main-color: #4b2e17;
+      --accent-color: #e8d3ba;
+      --bg-color: #fffaf5;
+      --text-color: #333;
+      --font: 'Segoe UI', sans-serif;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: var(--font);
+      background: var(--bg-color);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--main-color);
+      color: white;
+      padding: 15px 30px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+      margin-bottom: 5px;
+    }
+
+    header p {
+      font-style: italic;
+      font-size: 1rem;
+    }
+
+    nav {
+      background: #3c2312;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      background: var(--accent-color);
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .hero h2 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+      color: var(--main-color);
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .gallery {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.03);
+    }
+
+    .about {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+    }
+
+    footer {
+      background: var(--main-color);
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Emanyata Photography</h1>
+    <p>Capturing Culture. Telling Stories.</p>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#about">About</a>
+    <a href="#gallery">Gallery Stories</a>
+  </nav>
+
+  <section class="hero">
+    <h2>Welcome to Emanyata</h2>
+    <p>We focus on traditional photography, African culture, and storytelling through powerful visuals that preserve identity and heritage.</p>
+  </section>
+
+  <section id="gallery" class="gallery">
+    <img src="pexels-followalice-667200.jpg" alt="Cultural photo 1">
+    <img src="pexels-followalice-667203.jpg" alt="Cultural photo 2">
+    <img src="pexels-jonathan-john-1035705388-30629419.jpg" alt="Cultural photo 3">
+    <img src="pexels-valerie-sutton-34163824-11679893.jpg" alt="Cultural photo 4">
+    <img src="EMANYATA PHOTOGRAPHY.png" alt="Cultural photo 5">
+    <img src="pexels-followalice-667200.jpg" alt="Cultural photo 6">
+  </section>
+
+  <section id="about" class="about">
+    <h2>About Emanyata</h2>
+    <p>Emanyata Photography is based in Tanzania and specializes in documenting indigenous traditions, events, and rituals through compelling visual storytelling. Whether it's a portrait session or a cultural ceremony, we aim to capture moments that matter.</p>
+  </section>
+
+  <section class="video-section" style="text-align:center; padding: 40px 20px;">
+  <h2>Culture in Motion</h2>
+  <p>Watch our short film capturing the heartbeat of heritage.</p>
+  <video width="50%" controls>
+    <source src="maasai video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</section>
+
+
+  <footer>
+    <p>Contact us at emanyata@example.com | Instagram: @emanyata.photography</p>
+    <p>&copy; 2025 Emanyata Photography. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
