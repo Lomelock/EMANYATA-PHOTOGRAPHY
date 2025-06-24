@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Emanyata Photography</title>
+  <link rel="icon" href="EMANYATA PHOTOGRAPHY.png" type="image/x-icon">
   <style>
     :root {
       --main-color: #4b2e17;
@@ -105,6 +106,24 @@
       max-width: 800px;
       margin: auto;
       text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .about video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 0;
+      opacity: 0.35;
+    }
+
+    .about div {
+      position: relative;
+      z-index: 1;
     }
 
     footer {
@@ -143,20 +162,19 @@
     <img src="pexels-followalice-667200.jpg" alt="Cultural photo 6">
   </section>
 
-  <section id="about" class="about">
-    <h2>About Emanyata</h2>
-    <p>Emanyata Photography is based in Tanzania and specializes in documenting indigenous traditions, events, and rituals through compelling visual storytelling. Whether it's a portrait session or a cultural ceremony, we aim to capture moments that matter.</p>
+  <section id="about" class="about" style="position:relative; overflow:hidden;">
+    <video autoplay muted loop playsinline
+      style="position:absolute; top:0; left:0; width:100%; height:100%; object-fit:cover; z-index:0; opacity:0.35;">
+      <source src="maasai video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div style="position:relative; z-index:1;">
+      <h2>About Emanyata</h2>
+      <p>Emanyata Photography is based in Tanzania and specializes in documenting indigenous traditions, events, and rituals through compelling visual storytelling. Whether it's a portrait session or a cultural ceremony, we aim to capture moments that matter.</p>
+      <h3 style="margin-top:2em;">Culture in Motion</h3>
+      <p>Watch our short film capturing the heartbeat of heritage.</p>
+    </div>
   </section>
-
-  <section class="video-section" style="text-align:center; padding: 40px 20px;">
-  <h2>Culture in Motion</h2>
-  <p>Watch our short film capturing the heartbeat of heritage.</p>
-  <video width="50%" controls>
-    <source src="maasai video.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-</section>
-
 
   <footer>
     <p>Contact us at emanyata@example.com | Instagram: @emanyata.photography</p>
